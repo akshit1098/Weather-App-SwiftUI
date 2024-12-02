@@ -26,6 +26,18 @@ struct ContentView: View {
                     .foregroundStyle(.white)
                     .padding() //adds padding within the text
                 
+                VStack(spacing: 8){
+                    Image(systemName: "cloud.sun.fill")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit) // So that the image does not appear to be stretched
+                        .frame(width: 180, height: 180) // The frame to adjust height and the width of the image
+                    Text("76°") //option+shift+8 = °
+                        .font(.system(size: 70, weight: .medium))
+                        .foregroundStyle(.white)
+                    
+                }
+                
                 Spacer() //using spacer will extend Vstack and push the text on the top. Spacers fill the entire spcae
 
             }
