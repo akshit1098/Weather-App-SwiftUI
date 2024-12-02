@@ -18,7 +18,7 @@ struct ContentView: View {
                 Button(action: {
                     // Your action code here
                 }) {
-                    Text("MyButton")
+                    Text("My Button")
                 }
             }
             .padding()
